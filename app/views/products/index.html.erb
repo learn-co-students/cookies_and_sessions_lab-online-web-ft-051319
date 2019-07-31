@@ -4,6 +4,9 @@
   <%=submit_tag "add to cart"%>
 <%end%>
 
-<% session[:cart].each do |item| %>
+<% cart.each do |item| %>
   <%= item %>
 <%end%>
+
+<%# need to include  'helper_method :cart' under ApplicationController in order for the cart method to work,
+otherwise we would need to use session[:cart]
