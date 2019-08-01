@@ -1,0 +1,8 @@
+<h1> Cart </h1>
+
+<%= form_tag session[:cart] do %>
+    <label>Product:</label><br>
+    <%= text_field_tag :'product' %><br>
+   
+    <%= submit_tag "add to cart" %>
+  <% end %>
