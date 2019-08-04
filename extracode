@@ -1,0 +1,14 @@
+<p> Team Name: <input type="text" name="name"></p>
+<p> Coach: <input type="text" name="coach"> </p>
+<p> Point Guard: <input type="text" name="pg"> </p>
+<p> Shooting Guard: <input type="text" name="sg"></p>
+<p>Power Forward:  <input type="text" name="pf"></p>
+<p> Small Forward: <input type="text" name="sf"></p>
+<P> Center: <input type="text" name='c'></p>
+<p><input id="Submit" type="submit"></p>
+</form>
+
+session[:cart_id] = @cart.id
+
+# load the cart referenced in the session
+@cart = session[:cart_id]
